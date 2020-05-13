@@ -1,13 +1,29 @@
 @import "~photoncss/src/less/photon";
 
+body {
+	overflow: hidden;
+}
+
 #root {
+	overflow: auto;
     display: flex;
     flex-direction: column;
-	min-height: calc(100vh - 48px);
+	padding-top: 30px;
+	min-height: calc(100vh - 78px);
 	@media @sm {
 		min-height: calc(100vh - 16px);
 	}
 	main {
 		flex-grow: 1;
 	}
+}
+
+.style_Bar__nNJjZ {
+	position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    margin-bottom: 100px;
+	background: @primary-variant!important;
+	border-bottom-color: @primary!important
 }

@@ -3,7 +3,7 @@ const merge = require("webpack-merge");
 module.exports = merge(require("./webpack.conf.js"), {
 	mode: "development",
 	devServer: {
-        port: 8080,
+        port: 8311,
 		host: "0.0.0.0",
         contentBase: "./src",
 		index: require("./web-app.json").config.spa_root,

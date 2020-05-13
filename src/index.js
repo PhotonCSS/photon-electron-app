@@ -5,9 +5,6 @@ import { render } from "react-dom";
 // Import app stylesheet
 import "./index.less";
 
-// Import jQuery
-import "script-loader!jquery";
-
 // Import PhotonCSS
 import "photoncss";
 
