@@ -1,7 +1,6 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const HtmlWebpackPartialsPlugin = require("html-webpack-partials-plugin");
 const htmlWebpackInjectStringPlugin = require("html-webpack-inject-string-plugin");
 const { EnvironmentPlugin } = require("webpack");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
@@ -12,7 +11,7 @@ module.exports = {
 	target: "node",
 	entry: "./src/index.js",
 	output: {
-		path: __dirname + "/public_html",
+		path: __dirname + "/asar_unpacked",
 		filename: "app.js"
 	},
     module: {

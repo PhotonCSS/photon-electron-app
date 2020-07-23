@@ -4,7 +4,7 @@
 	"prefix": "./static/",
 	"config": {
 
-		"appName": "Static SPA",
+		"appName": "React Electron App",
 		"version": "1.0.0",
 		"appDescription": null,
 		"developerName": "Josh Merlino",

@@ -1,2 +1,3 @@
-public_html
-node_modules/
+/bin
+/asar_unpacked
+node_modules

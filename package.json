@@ -1,15 +1,24 @@
 {
     "name": "react-electron-app",
-    "version": "1.0.0",
+    "customName": "App",
+    "description": "App",
     "main": "app.js",
+    "version": "1.0.0",
+    "keywords": [],
+    "license": "ISC",
+    "homepage": "https://joshmerlino.github.io",
+    "projectUrl": "https://github.com/${user}/${project}",
+    "author": {
+        "name": "Josh Merlino",
+        "email": "joshua.merlino@gmail.com"
+    },
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "build": "echo public_html/index.html#/ > .paths && webpack --config webpack.prod.js",
-        "dev": "echo http://localhost:8311/index.html#/ > .paths && webpack-dev-server -w --config webpack.dev.js"
+        "build": "rm -rf dist && webpack --config webpack.prod.js",
+        "compile": "electron-builder build",
+        "dev": "webpack-dev-server -w --config webpack.dev.js",
+        "render": "env NODE_ENV=dev electron ."
     },
-    "keywords": [],
-    "author": "Josh Merlino",
-    "license": "ISC",
     "devDependencies": {
         "@babel/core": "^7.9.0",
         "@babel/plugin-proposal-class-properties": "^7.8.3",
@@ -18,16 +27,17 @@
         "babel-loader": "^8.1.0",
         "clean-webpack-plugin": "^3.0.0",
         "css-loader": "^3.4.2",
+        "electron": "^8.2.5",
+        "electron-builder": "^22.6.0",
         "file-loader": "^6.0.0",
         "frameless-titlebar": "^2.1.3",
         "html-webpack-inject-string-plugin": "^1.0.2",
         "html-webpack-partials-plugin": "^0.5.6",
         "html-webpack-plugin": "^4.0.1",
-        "jquery": "^3.5.0",
         "less": "^3.11.1",
         "less-loader": "^5.0.0",
         "mini-css-extract-plugin": "^0.9.0",
-        "photoncss": "^10.3.40-beta",
+        "photoncss": "^10.4.49-beta",
         "raw-loader": "^4.0.0",
         "react": "^16.13.1",
         "react-dom": "^16.13.1",
@@ -38,6 +48,6 @@
         "webpack-merge": "^4.2.2"
     },
     "dependencies": {
-        "electron": "^8.2.5"
+        "jquery": "^3.5.1"
     }
 }

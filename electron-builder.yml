@@ -1,0 +1,21 @@
+appId: com.jmer05.app
+productName: App
+copyright: 'Copyright © 2020 ${author}'
+
+directories:
+  output: bin
+  buildResources: build
+win:
+  target:
+    - nsis
+    - portable
+    - msi
+  icon: src/static/icon.png
+linux:
+  target:
+    - AppImage
+    - snap
+    - tar.gz
+  category: Utility
+  icon: src/static/icon.png
+electronVersion: 8.2.5

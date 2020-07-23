@@ -23,7 +23,15 @@ body {
     top: 0;
     left: 0;
     width: 100vw;
-    margin-bottom: 100px;
-	background: @primary-variant!important;
-	border-bottom-color: @primary!important
+	z-index: 2000;
+	.style_MenuButtonContainer__3d9pg {
+		background: @primary-variant!important;
+		&:hover {
+			background: @primary!important;
+		}
+	}
+}
+
+.toolbar.fixed {
+	top: 28px!important;
 }

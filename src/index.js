@@ -8,9 +8,6 @@ import "./index.less";
 // Import PhotonCSS
 import "photoncss";
 
-// Register a static asset caching service-worker
-location.protocol === "https:" && "serviceWorker" in navigator && navigator.serviceWorker.register("/service-worker.js")
-
 // Import root component
 import Root from "components/Root";
 
