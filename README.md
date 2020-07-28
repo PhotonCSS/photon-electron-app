@@ -1,9 +1,12 @@
-# static-spa: Create single page applications using PhotonCSS
+# Create desktop applications using PhotonCSS & Electron
 
 All you really need to do is
 ```bash
-npm install
-npm install --save-dev photoncss
+# Install node modules
+$ npm install
+
+# Update PhotonCSS to the latest version
+$ npm update photoncss
 ```
 
 Add custom themes to `src/index.less` after Photon is imported,
@@ -17,13 +20,13 @@ Example: if you have `src/static/image1.png`, you would resolve that as
 <img src={app.static("image1.png")} />
 ```
 
-### Run dev server
+### Run app in development mode
 ```bash
-npm run dev
+$ npm run dev
 ```
 
-### Build production version
+### Compile application & installers
 ```bash
-npm run Build
+$ npm run compile
 ```
-build output is in `public_html/`
+Binary builds are in `bin/`. Build current supports Windows 32, 64 bit & Linux 32, 64 bit

@@ -1,16 +1,13 @@
-import React from "react";
+import React, { Fragment } from "react";
 
-// Which path should this view render for
-const route = "/";
-
-import { Link } from "react-router-dom";
-import { Button } from "@photoncss/Button";
-
-const View = () =>
-	<React.Fragment>
-		<p>Current Route: {route}</p>
-		<Link to="/route"><Button variant="raised" color="primary">GO TO ROUTE: /route</Button></Link>
-	</React.Fragment>;
+// Render view
+function View() {
+	return (
+		<Fragment>
+			get started by editing `src/views/Index.js`
+		</Fragment>
+	)
+}
 
 // Export View and route
-export default { View, route }
+export default { View, route: "/" }
